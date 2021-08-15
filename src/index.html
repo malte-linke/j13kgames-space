@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Space</title>
+    <script src="index.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        background: #000;
+      }
+      #game {
+        background: #add8e6;
+
+        /* draws the canvas in a somewhat pixelated fashion */
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+  </body>
+</html>

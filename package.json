@@ -1,0 +1,30 @@
+{
+  "name": "js13kgames-space",
+  "version": "1.0.0",
+  "description": "Our contribution to the Js13kGames game jam.",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "manual": "npm run build:pack",
+    "build": "npm run build:pack && npm run build:zip && npm run build:size",
+    "build:pack": "parcel build ./src/index.html --no-source-maps",
+    "build:zip": "node ./scripts/zip.js",
+    "build:size": "node ./scripts/size.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malte-linke/js13kgames-space.git"
+  },
+  "keywords": [
+    "space",
+    "js13kgames2021"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malte-linke/js13kgames-space/issues"
+  },
+  "homepage": "https://github.com/malte-linke/js13kgames-space#readme",
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "parcel": "^2.0.0-rc.0"
+  }
+}

@@ -1,0 +1,11 @@
+# ignore node_modules
+node_modules
+
+# ignore vscode and parcel files
+.vscode
+.parcel-cache
+
+# ignore all dist files
+dist/*.js
+dist/*.css
+dist/*.html
