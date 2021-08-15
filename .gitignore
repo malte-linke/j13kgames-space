@@ -6,6 +6,4 @@ node_modules
 .parcel-cache
 
 # ignore all dist files
-dist/*.js
-dist/*.css
-dist/*.html
+dist

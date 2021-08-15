@@ -5,7 +5,8 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "manual": "npm run build:pack",
-    "build": "npm run build:pack && npm run build:zip && npm run build:size",
+    "build": "npm i && npm run build:cleanup && npm run build:pack && npm run build:zip && npm run build:size",
+    "build:cleanup": "node ./scripts/cleanup.js",
     "build:pack": "parcel build ./src/index.html --no-source-maps",
     "build:zip": "node ./scripts/zip.js",
     "build:size": "node ./scripts/size.js"
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/malte-linke/js13kgames-space#readme",
   "dependencies": {
     "archiver": "^5.3.0",
+    "colors": "^1.4.0",
     "parcel": "^2.0.0-rc.0"
   }
 }
